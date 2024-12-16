@@ -7,6 +7,9 @@ Once you finish your sample and it gets merged, you can open a PR in the Daytona
 
 # Askpixie 🐦
 
+**Language**: Python  
+**Framework**: [Reflex](https://reflex.dev/docs)  
+
 AskPixie: Unleashing Knowledge, Python-Powered. Harnessing Google's Gemini API for Smart Learning. Explore Topics, Upload Images, Dive into Learning Delight!
 
 ## Overview 🚀
