@@ -28,5 +28,5 @@
         ]
       }
     },
-    "postCreateCommand": "pip install reflex==0.3.4 pillow google-generativeai IPython"
+   "postCreateCommand": "python -m venv .venv && source .venv/bin/activate && pip install reflex==0.3.4 pillow google-generativeai IPython"
   }
