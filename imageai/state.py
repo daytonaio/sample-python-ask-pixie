@@ -71,7 +71,7 @@ class AppState(rx.State):
     def process_input(self):
         prompt = f"You are a prodigy in the subject of {self.promptu},You know Almost everything,but will not give answer if someone ask other than {self.promptu}.Act as a highly educated professor for '{self.question}'which is in context of subject {self.promptu}, generate an answer without limit, use emojis. Segregate into: Introduction (new paragraph), Example (new paragraph). Use '<br>' for new lines, maintain two-line spacing after each section. Include related links at the end.\nTopic: '{self.question}'"
         genai.configure(api_key="API_KEY_G")
-        model = genai.GenerativeModel("gemini-pro")
+        model = genai.GenerativeModel("gemini-1.5-pro")
         response = model.generate_content(prompt)
         self.to_markdown(response.text)
         self.answera = response.text
@@ -97,7 +97,7 @@ class AppState(rx.State):
     def google(self):
         img = Image.open(".web/public/"+self.img[0])
         genai.configure(api_key=os.getenv("API_KEY_G"))
-        model = genai.GenerativeModel('gemini-pro-vision')
+        model = genai.GenerativeModel('gemini-2.0-flash-exp')
         response = model.generate_content(img)
         self.answer = response.text
         self.padding_hut(self.answer)
