@@ -96,7 +96,7 @@ class AppState(rx.State):
 
     def google(self):
         img = Image.open(".web/public/"+self.img[0])
-        genai.configure(api_key=os.getenv("API_KEY_G"))
+        genai.configure(api_key="API_KEY_G")
         model = genai.GenerativeModel('gemini-2.0-flash-exp')
         response = model.generate_content(img)
         self.answer = response.text
