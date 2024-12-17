@@ -28,6 +28,6 @@
         ]
       }
     },
-   "postCreateCommand": " "postCreateCommand": "python -m venv .env && .env/bin/pip install reflex==0.3.4 pillow google-generativeai IPython""
+   "postCreateCommand": "python -m venv .env && .env/bin/pip install reflex==0.3.4 pillow google-generativeai IPython"
 
   }
