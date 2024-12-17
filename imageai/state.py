@@ -70,7 +70,7 @@ class AppState(rx.State):
 
     def process_input(self):
         prompt = f"You are a prodigy in the subject of {self.promptu},You know Almost everything,but will not give answer if someone ask other than {self.promptu}.Act as a highly educated professor for '{self.question}'which is in context of subject {self.promptu}, generate an answer without limit, use emojis. Segregate into: Introduction (new paragraph), Example (new paragraph). Use '<br>' for new lines, maintain two-line spacing after each section. Include related links at the end.\nTopic: '{self.question}'"
-        genai.configure(api_key=os.getenv("API_KEY_G"))
+        genai.configure(api_key="API_KEY_G")
         model = genai.GenerativeModel("gemini-pro")
         response = model.generate_content(prompt)
         self.to_markdown(response.text)
