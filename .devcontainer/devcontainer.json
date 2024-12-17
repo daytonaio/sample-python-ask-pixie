@@ -28,5 +28,5 @@
         ]
       }
     },
-   "postCreateCommand": "pip install -r ../requirements.txt"
+   "postCreateCommand": "cd .. && pip install -r requirements.txt"
   }
