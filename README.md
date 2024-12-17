@@ -35,25 +35,19 @@ The Current Project uses Gemini-pro for text generation and Gemini-pro-vision fo
 1. **Install Daytona**: Follow the [Daytona installation guide](https://www.daytona.io/docs/installation/installation/).  
 2. **Create the Workspace**:  
    ```bash  
-   daytona create https://github.com/Vr978/DAYTONA-ASKPIXIE
+   daytona create https://github.com/Vr978/DAYTONA-ASKPIXIE.git --devcontainer-path=.devcontainer/devcontainer.json
    ```  
-
-3. **Navigate to the project directory**
-```bash
-   cd imageai
-``` 
-
-4. **Install the dependencies**
+3. **Install the dependencies**
 ```bash
    reflex init
 ```
-5. **Add Your Gemini-Api Key**
+4. **Add Your Gemini-Api Key in State.py**
 in terminal using
 ```bash
-   export API_KEY_G='YOUR_API_KEY'
+   API_KEY_G='YOUR_API_KEY'
 ```
 
-6. **Run the app**
+5. **Run the app**
 ```bash
    reflex run
 ```
