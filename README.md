@@ -41,8 +41,7 @@ The Current Project uses Gemini-pro for text generation and Gemini-pro-vision fo
 ```bash
    reflex init
 ```
-4. **Add Your Gemini-Api Key in State.py**
-in terminal using
+4. **Add Your Gemini-Api Key** in state.py
 ```bash
    API_KEY_G='YOUR_API_KEY'
 ```
