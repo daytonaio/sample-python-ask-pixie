@@ -42,7 +42,7 @@ The Current Project uses Gemini-pro for text generation and Gemini-pro-vision fo
 ```
 5. **Run the app**
 ```bash
-   reflex run
+   reflex run --loglevel debug
 ```
 Note : Must have Gemini API key to run the app, you can create [here](https://ai.google.dev/).
 
