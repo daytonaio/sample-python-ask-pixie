@@ -1,9 +1,3 @@
-This repository contains a README file sample for Daytona Samples and the MIT License.
-
-It can be used as a template to create sample repositories that can be added into [Daytona](https://github.com/daytonaio/daytona).
-
-Once you finish your sample and it gets merged, you can open a PR in the Daytona repo and submit the sample into the [index file](https://github.com/daytonaio/daytona/blob/main/hack/samples/index.json).
-
 
 # Askpixie 🐦
 
@@ -36,20 +30,16 @@ The Current Project uses Gemini-pro for text generation and Gemini-pro-vision fo
 2. **Clone the repository**:
    ```bash
    git clone https://github.com/Vr978/DAYTONA-ASKPIXIE.git
-   ```
-3. **Add Gemini Key in Project Configuration**: Add GEMINI_API_KEY = "your_api_key" in environment variable.
-   ```bash
-   ./daytona project-config add
    ``` 
-4. **Create the Workspace**: (by adding git provider)
+3. **Create the Workspace**: (by adding git provider)
    ```bash  
    daytona create https://github.com/Vr978/DAYTONA-ASKPIXIE.git --devcontainer-path=.devcontainer/devcontainer.json
    ```  
-5. **Install the dependencies**
+4. **Install the dependencies**
 ```bash
    reflex init
 ```
-6. **Run the app**
+5. **Run the app**
 ```bash
    reflex run
 ```
