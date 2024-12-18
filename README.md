@@ -32,21 +32,24 @@ The Current Project uses Gemini-pro for text generation and Gemini-pro-vision fo
 
 ### Open Using Daytona  
 
-1. **Install Daytona**: Follow the [Daytona installation guide](https://www.daytona.io/docs/installation/installation/).  
-2. **Create the Workspace**:  
+1. **Install Daytona**: Follow the [Daytona installation guide](https://www.daytona.io/docs/installation/installation/).
+2. **Clone the repository**:
+   ```bash
+   git clone https://github.com/Vr978/DAYTONA-ASKPIXIE.git
+   ```
+3. **Add Gemini Key in Project Configuration**: Add GEMINI_API_KEY = "your_api_key" in environment variable.
+   ```bash
+   ./daytona project-config add
+   ``` 
+4. **Create the Workspace**: (by adding git provider)
    ```bash  
    daytona create https://github.com/Vr978/DAYTONA-ASKPIXIE.git --devcontainer-path=.devcontainer/devcontainer.json
    ```  
-3. **Install the dependencies**
+5. **Install the dependencies**
 ```bash
    reflex init
 ```
-4. **Add Your Gemini-Api Key** in state.py (line 73, line 98)
-```bash
-   API_KEY_G='YOUR_API_KEY'
-```
-
-5. **Run the app**
+6. **Run the app**
 ```bash
    reflex run
 ```
