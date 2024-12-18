@@ -2,7 +2,7 @@
     "name": "Askpixie Development",
     "image": "mcr.microsoft.com/devcontainers/python:3.12",
     "forwardPorts": [
-      3000
+      8000
     ],
     "customizations": {
       "vscode": {
