@@ -30,7 +30,7 @@ The Current Project uses Gemini-pro for text generation and Gemini-pro-vision fo
   
 2. **Create the Workspace**: (by adding git provider)
    ```bash  
-   daytona create https://github.com/Vr978/DAYTONA-ASKPIXIE.git --devcontainer-path=.devcontainer/devcontainer.json
+   daytona create https://github.com/Vr978/sample-python-ask-pixie.git --devcontainer-path=.devcontainer/devcontainer.json
    ```
 3. **Add Gemini Key in Project Configuration**: Add GEMINI_API_KEY="your_api_key" in environment variable.
    ```bash
