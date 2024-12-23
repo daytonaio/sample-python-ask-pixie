@@ -28,6 +28,6 @@
         ]
       }
     },
-   "postCreateCommand": "pip install reflex==0.3.4 pillow google-generativeai IPython"
+   "postCreateCommand": "pip install -r ./requirements.txt"
 
   }
