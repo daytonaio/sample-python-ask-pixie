@@ -29,20 +29,20 @@ The Current Project uses Gemini-pro for text generation and Gemini-pro-vision fo
 1. **Install Daytona**: Follow the [Daytona installation guide](https://www.daytona.io/docs/installation/installation/).
   
 2. **Create the Workspace**: (by adding git provider)
-   ```bash  
-   daytona create https://github.com/daytonaio/sample-python-ask-pixie.git --devcontainer-path=.devcontainer/devcontainer.json
-   ```
+```bash  
+daytona create https://github.com/daytonaio/sample-python-ask-pixie.git --devcontainer-path=.devcontainer/devcontainer.json
+```
 3. **Add Gemini Key in your .env.example**:
-   ```bash
-  GEMINI_API_KEY=<your_api_key_here>
-   ```   
+ ```bash
+GEMINI_API_KEY=<your_api_key_here>
+```   
 4. **Install the dependencies**
 ```bash
-   reflex init
+reflex init
 ```
 5. **Run the app**
 ```bash
-   reflex run --loglevel debug
+reflex run --loglevel debug
 ```
 Note : Must have Gemini API key to run the app, you can create [here](https://ai.google.dev/).
 
