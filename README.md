@@ -32,9 +32,9 @@ The Current Project uses Gemini-pro for text generation and Gemini-pro-vision fo
    ```bash  
    daytona create https://github.com/daytonaio/sample-python-ask-pixie.git --devcontainer-path=.devcontainer/devcontainer.json
    ```
-3. **Add Gemini Key in Project Configuration**: Add GEMINI_API_KEY="your_api_key" in environment variable.
+3. **Add Gemini Key in your .env.example**:
    ```bash
-   ./daytona project-config add
+  GEMINI_API_KEY=<your_api_key_here>
    ```   
 4. **Install the dependencies**
 ```bash

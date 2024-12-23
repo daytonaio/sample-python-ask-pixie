@@ -6,9 +6,10 @@ from IPython.display import Markdown
 import base64
 from PIL import Image
 import google.generativeai as genai
+from dotenv import load_dotenv
 import os
 
-
+load_dotenv('.env.example')
 
    
 class AppState(rx.State):
