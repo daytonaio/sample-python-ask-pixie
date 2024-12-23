@@ -9,7 +9,7 @@ import google.generativeai as genai
 from dotenv import load_dotenv
 import os
 
-load_dotenv('.env.example')
+load_dotenv()
 
    
 class AppState(rx.State):
